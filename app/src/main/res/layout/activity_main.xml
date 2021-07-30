@@ -7,18 +7,36 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/jari"
+        android:id="@+id/editTextNilai1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="297dp"
+        android:layout_marginTop="244dp"
         android:layout_marginEnd="101dp"
         android:layout_marginRight="101dp"
         android:ems="10"
-        android:hint="Masukkan jari-jari"
+        android:hint="Masukkan nilai pertama"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNilai2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:ems="10"
+        android:hint="Masukkan nilai kedua"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,37 +46,32 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
         android:layout_marginLeft="158dp"
-        android:layout_marginTop="71dp"
+        android:layout_marginTop="104dp"
         android:layout_marginEnd="159dp"
         android:layout_marginRight="159dp"
+        android:gravity="center"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jari" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNilai1" />
 
     <TextView
-        android:id="@+id/textViewKeliling"
-        android:layout_width="44dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="183dp"
-        android:layout_marginRight="183dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/textViewLuas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonHitung"
-        tools:text="Keliling" />
-
-    <TextView
-        android:id="@+id/textViewLuas"
-        android:layout_width="wrap_content"
+        android:id="@+id/textViewHasil"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="196dp"
-        android:layout_marginRight="196dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginLeft="133dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:layout_marginBottom="175dp"
+        android:gravity="center"
+        android:text="Hasil"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:text="Luas" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHitung" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
