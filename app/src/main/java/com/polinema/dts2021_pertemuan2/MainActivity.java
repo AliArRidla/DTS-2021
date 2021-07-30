@@ -29,11 +29,6 @@ public class MainActivity extends AppCompatActivity {
         textViewHasil = findViewById(R.id.textViewHasil);
         buttonHitung = findViewById(R.id.buttonHitung);
 
-//        EditText editTextJari = findViewById(R.id.editTextNilai1);
-//        TextView textViewKeliling = findViewById(R.id.textViewKeliling);
-//        TextView textViewLuas = findViewById(R.id.textViewLuas);
-//        Button buttonHitung = findViewById(R.id.buttonHitung);
-
 //        aksi
 
         buttonHitung.setOnClickListener(new View.OnClickListener() {
@@ -49,24 +44,5 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-//        buttonHitung.setOnClickListener(new View.OnClickListener(){
-
-//            @Override
-//            public void onClick(View view){
-//                convert
-//                float inoutJariJari = Float.parseFloat(editTextJari.getText().toString());
-
-//                inisiasi & deklarasi rumus
-//                double keliling = inoutJariJari*2* Math.PI;
-//                double luas = Math.pow(inoutJariJari,2)* Math.PI;
-
-//                set nilai
-//                textViewKeliling.setText(String.valueOf(keliling));
-//                textViewLuas.setText(String.valueOf(luas));
-//            }
-
-//        });
-
     }
 }
